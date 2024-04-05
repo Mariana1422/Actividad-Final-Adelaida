@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portafolio.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#education">Formación</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="/index.html">Galletita & Café</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    
+    <section id="about">
+      <img src="/images/perfil.jpg" alt="perfil">
+      <h2>Sobre mí</h2>
+      <p>Mi nombre es Mariana Henao Orozco, soy un apersona con muchas habilidades y con muchas ganas de aprender mucho mas.</p>
+      <p>En mi tiempo libre, disfruto mucho jugando y practicando patinaje para mantenerme en forma.</p>
+      <p>Además, tengo un gran interés en el mundo de la tecnología y la innovación. Siempre estoy buscando aprender sobre las últimas tendencias y herramientas que puedan ampliar mis conocimientos y ayudarme a alcanzar mis metas.</p>
+      <p>En resumen, soy una persona curiosa, sincera y muy honesta y con muchas ganas de aprender muchas cosas nuevas .</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portafolio</h2>
+      <ul>
+        <li>
+      
+            <img src="/images/portafolio1.png" alt="Portfolio item 1">
+            <div class="portfolio-info">
+              <h3>BarrelGlow</h3>
+              <p>Este es un pro
+                yecto realizado por mi equipo de trabajo y yo como proyecto final</p>
+            </div>
+       
+        </li>
+        <li>
+       
+            <img src="/images/portafolio2.png" alt="Portfolio item 2">
+            <div class="portfolio-info">
+              <h3>Galletita & Café</h3>
+              <p>Proyecto final propuesto por nuestra profesora </p>
+            </div>
+       
+        </li>
+      
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>
+          <span class="skill-name">HTML/CSS</span>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 90%;"></div>
+          </div>
+        </li>
+        <li>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 50%;"></div>
+          </div>
+        </li>
+        <li>
+          <span class="skill-name">MySQL</span>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 30%;"></div>
+         </div>
+        </li>
+        <li>
+          <span class="skill-name">Node JS</span>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 60%;"></div>
+          </div>
+        </li>
+        <li>
+          <span class="skill-name">React</span>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 40%;"></div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+    <section id="education">
+      <h2>Formación</h2>
+      <ul>
+        <li>
+          <span class="education-name">Bachiller</span>
+          <span class="education-institution">Liceo Santa Margarita</span>
+          <span class="education-year">2011-2022</span>
+        </li>
+        <li>
+          <span class="education-name">Certificación en Inglés nivel 3</span>
+          <span class="education-institution">SENA</span>
+          <span class="education-year">2024</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    const portfolioItems = document.querySelectorAll('#portfolio li');
+
+portfolioItems.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('animate-pulse');
+  });
+});
+  </script>
+</body>
+</html>

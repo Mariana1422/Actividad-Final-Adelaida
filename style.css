@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, sans-serif;
+}
+
+
+
+/* NAV */
+nav {
+    display: block;
+    background-color: burlywood;
+    width: 100%;
+    position: fixed;
+    z-index: 6;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 1em;
+    display: flex;
+}
+
+nav ul li a {
+    margin-left: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline brown 2px;
+}
+
+nav ul img[alt="logo"] {
+    width: 5em;
+}
+
+/* banner */
+
+.banner {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.banner img {
+
+    width: 100%;
+    height: 90vh;
+    filter: brightness(45%);
+    z-index: -1;
+}
+
+.publicidad {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+}
+
+.publicidad h1 {
+    font-size: xxx-large;
+}
+
+
+/* ICONS */
+.icon-group {
+    padding: 2em 0;
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-between;
+}
+
+.icon-item {
+    text-align: center;
+    flex: 1;
+}
+
+.icon-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #eca023;
+    margin-bottom: 1rem;
+}
+
+.icon-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+#letra {
+    margin-top: .2em;
+}
+
+/*slider */
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em .5em;
+    justify-content: center;
+    background-color: rgb(207, 162, 137);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 16px;
+}
+
+.formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    background-color: #e2e2e2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-width: 50%;
+    max-height: 85%;
+    overflow-y: auto;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario label,
+.formulario input,
+.formulario textarea,
+.formulario button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    resize: none;
+}
+
+.formulario input[type="submit"],
+.formulario button {
+    background-color: #007bff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover,
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+#formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+#cerrar {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cerrar:hover {
+    color: red;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+/* Estilos del botón de abrir formulario */
+#form {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos de las redes sociales */
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+.preguntas-frecuentes {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.preguntas-frecuentes h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.preguntas-frecuentes h3 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.preguntas-frecuentes p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las respuestas */
+.preguntas-frecuentes p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para las preguntas */
+.preguntas-frecuentes h3:hover {
+    color: #ff5722;
+    cursor: pointer;
+}
+
+/* Estilos del mapa */
+
+iframe {
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sobre-nosotros {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.contenido {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.contenido h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contenido h3 {
+    color: #555;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contenido ul {
+    list-style-type: disc;
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-left: 30px;
+}
+
+.contenido ul li {
+    margin-bottom: 10px;
+}
+
+.contenido ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 400%;
+    position: relative;
+    left: 0;
+    animation: slide 20s infinite;
+}
+
+.slider ul li {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.slider ul li img {
+    width: 99%;
+}
+
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .mapa {
+        width: 90%;
+    }
+
+    .form {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .redes-sociales a {
+        font-size: 18px;
+    }
+}
